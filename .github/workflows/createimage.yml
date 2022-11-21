@@ -22,6 +22,6 @@ jobs:
       - name: Build the Docker image
         run: 
           docker build -t videostream .;
-          docker tag app jvieira22/videostream;
+          docker tag jvieira22/videostream;
           docker push jvieira22/videostream;
       
