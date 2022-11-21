@@ -17,7 +17,7 @@ jobs:
     - name: Build the Docker image
       run: 
         docker build -t videostream:v1 .
-        docker login -u jvieira22 -p dckr_pat_Z4ngVxoZVNDnEoKpqbNArlCcgQE
+        docker login -u DOCKER_USER -p DOCKER_TOKEN
         docker tag app jvieira22/videostream
         docker push jvieira22/videostream
       
