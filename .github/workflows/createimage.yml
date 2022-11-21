@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: 
-        docker build -t videostream:v1 .
+        docker build -t videostream .
         docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_TOKEN }} 
         docker tag app jvieira22/videostream
         docker push jvieira22/videostream
