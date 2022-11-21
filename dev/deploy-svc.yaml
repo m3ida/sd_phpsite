@@ -16,7 +16,7 @@ spec:
         app: videostream
     spec:
       containers:
-      - name: exemplo
+      - name: videostream
         image: jvieira22/videostream:latest
         ports:
         - containerPort: 3000
