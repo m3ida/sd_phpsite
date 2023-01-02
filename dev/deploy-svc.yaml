@@ -15,10 +15,6 @@ spec:
       labels:
         app: videostream
     spec:
-      syncPolicy:
-        automated:
-          prune: true
-          selfHeal: true
       containers:
       - name: videostream
         image: jvieira22/videostream:latest
