@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/jonvieirac/sd_phpsite.git
-    path: videos
+    path: dev
     targetRevision: HEAD
   destination: 
     server: https://kubernetes.default.svc
