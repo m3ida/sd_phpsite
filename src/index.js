@@ -10,7 +10,7 @@ const port = 3000;
 //
 app.get("/video", (req, res) => {
 
-    const videoPath = path.join("./videos", "SampleVideo_1280x720_1mb.mp4");
+    const videoPath = path.join("./videos", "file_example_MP4_480_1_5MG.mp4");
     fs.stat(videoPath, (err, stats) => {
         if (err) {
             console.error("An error occurred ");
