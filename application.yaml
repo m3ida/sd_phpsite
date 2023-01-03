@@ -20,7 +20,8 @@ spec:
     syncOptions:
     - CreateNamespace=true
     - Replace=true
-
+    - PruneLast=true
+    
     automated:
       selfHeal: true
       prune: true
