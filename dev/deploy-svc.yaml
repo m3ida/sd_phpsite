@@ -5,10 +5,8 @@ metadata:
   namespace: sdapp
   labels:
     app: videostream
-  #annotations:
-  #8  argocd.argoproj.io/sync-options: Replace=true
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: videostream
@@ -18,9 +16,8 @@ spec:
         app: videostream
     spec:
       containers:
-      - name: videostream
+      - name: exemplo
         image: jvieira22/videostream:latest
-        imagePullPolicy: Always
         ports:
         - containerPort: 3000
 ---
@@ -32,7 +29,7 @@ metadata:
   labels:
     app: videostream
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
   - port: 3000
     protocol: TCP
