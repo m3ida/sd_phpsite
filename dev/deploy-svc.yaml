@@ -6,9 +6,6 @@ metadata:
   labels:
     app: videostream
 spec:
-  syncPolicy:
-    syncOptions:
-      - Replace=true
   replicas: 2
   selector:
     matchLabels:
