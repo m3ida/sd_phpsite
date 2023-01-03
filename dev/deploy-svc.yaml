@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: videostream
-        image: jvieira22/videostream:1.${{ github.run_number }}
+        image: jvieira22/videostream:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
