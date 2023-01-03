@@ -20,8 +20,6 @@ spec:
       containers:
       - name: videostream
         image: jvieira22/videostream:latest
-        command: 
-          - kubectl delete pods -n sdapp -l app=videostream
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
