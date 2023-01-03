@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/jonvieirac/sd_phpsite.git
+    repoURL: https://github.com/m3ida/sd_phpsite.git
     targetRevision: HEAD
     path: dev
   destination: 
