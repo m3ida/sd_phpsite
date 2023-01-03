@@ -27,7 +27,7 @@ jobs:
         run: echo ${{ github.run_attempt }}
       - name: Build the Docker image
         run: 
-          docker build -t videostream:latest .;
-          docker tag videostream:latest jvieira22/videostream:latest;
-          docker push jvieira22/videostream:latest;
+          docker build -t videostream:1.${{ github.run_number }} .;
+          docker tag videostream:latest jvieira22/videostream:1.${{ github.run_number }};
+          docker push jvieira22/videostream:1.${{ github.run_number }};
       
