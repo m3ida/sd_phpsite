@@ -28,6 +28,6 @@ jobs:
       - name: Build the Docker image
         run: 
           docker build -t videostream:1.${{ github.run_number }} .;
-          docker tag videostream:latest jvieira22/videostream:1.${{ github.run_number }};
+          docker tag videostream:1.${{ github.run_number }} jvieira22/videostream:1.${{ github.run_number }};
           docker push jvieira22/videostream:1.${{ github.run_number }};
       
