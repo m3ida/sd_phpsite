@@ -3,15 +3,13 @@ kind: Application
 metadata:
   name: videostream
   namespace: argocd
-  annotations:
-    argocd-image-updater.argoproj.io/image-list: jvieira22/videostream:latest
 spec:
   project: default
 
   source:
     repoURL: https://github.com/jonvieirac/sd_phpsite.git
-    path: dev
     targetRevision: HEAD
+    path: dev
   destination: 
     server: https://kubernetes.default.svc
     namespace: sdapp
@@ -19,10 +17,7 @@ spec:
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
-    - Replace=true
-    - PruneLast=true
-    
+
     automated:
       selfHeal: true
       prune: true
-      force: true
